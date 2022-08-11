@@ -1,4 +1,5 @@
 import './App.css';
+import './components/item-selector'
 
 function App() {
   return (
