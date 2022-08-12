@@ -1,5 +1,6 @@
 body {
-  background-color: #A6B07E;
+  background-image: url(https://i.pinimg.com/originals/1c/fa/1c/1cfa1c6acad44a2c1b70881cd5bf7604.png);
+
 }
 
 main {
@@ -8,9 +9,18 @@ main {
   justify-content: space-evenly;
 }
 
+.form {
+  padding: 20px;
+}
+
+#instructions {
+  text-align: center;
+  font-size: 8pt;
+}
+
 .header {
   border: 2px solid black;
-  background-color: #68A357;
+  background-color: #f8edca;
   text-align: center;
 }
 
@@ -20,7 +30,7 @@ main {
 }
 
 .item-list {
-  background-color: #C97064;
+  background-color: #f8edca;
   border: 2px solid black;
   display: flex;
   justify-content: left;
@@ -32,7 +42,7 @@ main {
 }
 
 .shopping-list {
-  background-color: #BCA371;
+  background-color: #f8edca;
   border: 2px solid black;
   display: flex;
   justify-content: right;
@@ -61,17 +71,23 @@ main {
 .reset-button {
   background-color: #C97064;
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
   text-align: center;
 }
 
 .add-button {
+  margin: 5px;
   background-color: #68A357;
   border-radius: 10px;
 }
 
-.strike-button {
+.heart-button {
+  border: 1px solid black;
+  background-color: transparent;
+
+}
+
+
+.delete-button {
   background-color: #C97064;
   border-radius: 10px;
 }

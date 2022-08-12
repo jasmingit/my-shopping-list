@@ -1,20 +1,15 @@
-import { useState } from "react";
-
-export default function CurrentList ({list}) {
-
-    const [listClass, setClass] = useState('items')
-    function handleClick(event) {
-        console.log(event);
-        setClass('strike')
-    };
-
+export default function CurrentList ({list, items, setItems}) {
+  function handleClick(item){
+    setItems([item,...items])
+  }
     return ( 
         <>
             {list.map((item, index) => {
             return (
-                <li key={index} className= {listClass}>
+                <li key={index} className= "items">
                     {item}
-                    <button onClick={() => handleClick()} className="strike-button">x</button>
+                    <input type="checkbox"></input>
+                    <button className=".heart-button" onClick={() => handleClick(item)} >❤️</button>
                 </li>
                 );
             })}

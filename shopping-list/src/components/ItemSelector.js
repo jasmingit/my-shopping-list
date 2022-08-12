@@ -6,7 +6,7 @@ function ItemSelector () {
 
     const [list, setList] = useState(["Your List is Empty!"])
 
-    const items = ['Bread', 'Milk', 'Eggs', 'Bacon', 'Tofu', 'Cheese', 'Onions'];
+    const [items, setItems] = useState([]);
 
     const addItem = (item) => {
         setList((currList) => {
@@ -21,8 +21,8 @@ function ItemSelector () {
 
     return (
         <main>
-            <ItemList items = {items} addItem = {addItem}/>
-            <ShoppingList list = {list} setList = {setList}/>
+            <ItemList items = {items} addItem = {addItem} setItems = {setItems}/>
+            <ShoppingList list = {list} setList = {setList} items = {items} setItems = {setItems}/>
         </main>
     );
 };
