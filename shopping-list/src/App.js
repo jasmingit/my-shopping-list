@@ -1,14 +1,14 @@
 import './App.css';
-import './components/item-selector'
+import ItemSelector from './components/ItemSelector';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Hi Jasmin</h1>
-      </header>
+    <Header />
+    <ItemSelector />
     </div>
   );
-}
+};
 
 export default App;

@@ -24,6 +24,25 @@
   color: white;
 }
 
+main {
+  border: 2px solid black;
+  display: inline-block;
+  /* margin: 8%; */
+  /* padding: 5%; */
+  width: 800px;
+  height: 350px;
+}
+
+.item-list {
+  background-color: antiquewhite;
+}
+
+.shopping-list {
+  background-color: aquamarine;
+}
+.strike {
+  text-decoration: line-through;
+}
 .App-link {
   color: #61dafb;
 }
