@@ -14,7 +14,7 @@ export default function CurrentList ({list}) {
             return (
                 <li key={index} className= {listClass}>
                     {item}
-                    <button onClick={() => handleClick()}>x</button>
+                    <button onClick={() => handleClick()} className="strike-button">x</button>
                 </li>
                 );
             })}

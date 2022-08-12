@@ -3,7 +3,6 @@ body {
 }
 
 main {
-  border: 2px solid black;
   display: flex;
   flex-direction: row;
   justify-content:space-evenly;
@@ -29,6 +28,8 @@ main {
   justify-content: left;
   align-items: center;
   display: inline-block;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .shopping-list {
@@ -38,6 +39,8 @@ main {
   justify-content: right;
   align-items: center;
   display: inline-block;
+  padding: 35px;
+  border-radius: 10px;
 }
 
 .items {
@@ -49,4 +52,25 @@ main {
   list-style: none;
   text-align: center;
   text-decoration: line-through;
+}
+
+.form {
+  text-align: center;
+}
+
+.reset-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.add-button {
+  background-color: #68A357;
+  border-radius: 10px;
+}
+
+.strike-button {
+  background-color: #C97064;
+  border-radius: 10px;
 }

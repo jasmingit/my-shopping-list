@@ -5,7 +5,7 @@ export default function Suggested ({items, addItem}) {
                 return (
                     <li key= {index} className="items">
                         {item}
-                        <button onClick={() => {addItem(item)}}>+</button>
+                        <button onClick={() => {addItem(item)}} className="add-button">+</button>
                     </li>
                 );
             })}
