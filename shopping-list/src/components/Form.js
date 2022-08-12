@@ -18,7 +18,7 @@ export default function Form ({addItem}) {
         <form onSubmit={handleSubmit} className="form">
             <label htmlFor="item-input">Item:</label>
             <input type="text" id="item-input" onChange={handleChange} value={itemInput}/>
-            <button className="submit-button">submit</button>
+            <button className="submit-button">Submit</button>
         </form>
     );
 };
