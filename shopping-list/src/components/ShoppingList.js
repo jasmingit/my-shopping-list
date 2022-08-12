@@ -1,25 +1,15 @@
-import { useState } from "react";
+import CurrentList from "./CurrentList";
+import ResetList  from "./ResetList";
 
-function ShoppingList({list}) {
-    const [listClass, setClass] = useState('shopping-list')
-    function handleClick() {
-        setClass('strike')
-    }
+function ShoppingList({list, setList}) {
+    
     return (
         <section className="shopping-list">
-            <h2>Shopping List</h2>
+            <h2 className="list-header">Shopping List</h2>
             <ul>
-                
-                    {list.map((item, index) => {
-                        return (
-                            <li key={index} className={listClass}>
-                                {item}
-                                <button onClick={() => handleClick()}>x</button>
-                            </li>
-                        )
-                    })}
-                
+                <CurrentList list = {list}/>
             </ul>
+                <ResetList setList = {setList}/>
         </section>
     );
 };

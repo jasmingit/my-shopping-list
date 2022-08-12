@@ -1,20 +1,16 @@
+import Suggested from './Suggested';
+import Form from './Form';
+
 function ItemList({items, addItem}) {
 
     return (
         <section className="item-list">
-        <h2>Here is your available items</h2>
-        <ul>
-            {items.map((item, index) => {
-
-                return (
-                    
-                    <li key= {index} >
-                        {item}
-                        <button onClick={() => {addItem(item)}}>+</button>
-                    </li>
-                )
-            })}
-        </ul>
+            <h2>Add Items To Your Shopping List</h2>
+                <Form addItem = {addItem}/>
+            <h2 className="list-header">Suggested Items</h2>
+            <ul>
+               <Suggested items = {items} addItem = {addItem}/>
+            </ul>
         </section>
     );
 };

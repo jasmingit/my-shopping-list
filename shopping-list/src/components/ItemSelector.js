@@ -22,7 +22,7 @@ function ItemSelector () {
     return (
         <main>
             <ItemList items = {items} addItem = {addItem}/>
-            <ShoppingList list = {list}/>
+            <ShoppingList list = {list} setList = {setList}/>
         </main>
     );
 };
